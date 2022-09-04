@@ -1,1 +1,1 @@
-loves(A,   cd)
+loves(A, B)
