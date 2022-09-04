@@ -1,1 +1,1 @@
-loves(A, B)
+loves(A, )
