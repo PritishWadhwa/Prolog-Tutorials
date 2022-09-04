@@ -1,0 +1,570 @@
+[start].
+
+Prolog interruption (h for help) ? a
+execution aborted
+| ?- loves(Romeo, Juliet).
+
+true ? 
+Action (; for next solution, a for all solutions, RET to stop) ? 
+Action (; for next solution, a for all solutions, RET to stop) ? 
+
+yes
+| ?- loves(Romeo, Juliet).
+
+true ? 
+
+yes
+| ?- loves(Juliet, Romeo).
+
+true ? 
+
+yes
+| ?- loves(Juliet, Romeoa).
+
+true ? 
+
+(1 ms) yes
+| ?- loves(Juliet, Ra).    
+
+true ? 
+
+yes
+| ?- [start].              
+compiling /Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl for byte code...
+/Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl:1: warning: singleton variables [Romeo,Juliet] for loves/2
+/Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl compiled, 3 lines read - 411 bytes written, 5 ms
+
+(1 ms) yes
+| ?- [start].
+compiling /Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl for byte code...
+/Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl compiled, 3 lines read - 504 bytes written, 4 ms
+
+yes
+| ?- loves(Romeo, Juliet).
+
+Juliet = juliet
+Romeo = romeo ? y
+Action (; for next solution, a for all solutions, RET to stop) ? 
+
+(1 ms) yes
+| ?- loves(romeo, juliet).
+
+yes
+| ?- loves(juliet, romeo).
+
+yes
+| ?- loves(juliet, romeoo).
+
+no
+| ?- loves(juliet, X).
+
+X = romeo
+
+yes
+| ?- loves(X, romeo).     
+
+X = juliet
+
+yes
+| ?- loves(romeo, romeo).
+
+no
+| ?- loves(romeo, X).    
+
+X = juliet
+
+yes
+| ?- [start]
+.
+compiling /Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl for byte code...
+/Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl compiled, 14 lines read - 1231 bytes written, 5 ms
+
+(1 ms) yes
+| ?- female(A)
+.
+
+A = alice ? ;
+
+A = betsy ? ;
+
+A = diana
+
+yes
+| ?- female(Alice).
+
+Alice = alice ? y
+Action (; for next solution, a for all solutions, RET to stop) ? 
+
+yes
+| ?- 
+
+.
+uncaught exception: error(syntax_error('user_input:10 (char:1) expression expected'),read_term/3)
+| ?- female(alice).
+
+yes
+| ?- listing(male).
+
+% file: /Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl
+
+male(albert).
+male(bill).
+male(bob).
+male(carl).
+male(charlie).
+male(dan).
+male(edward).
+
+yes
+| ?- listing(loves).
+
+% file: /Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl
+
+loves(romeo, juliet).
+loves(juliet, romeo) :-
+        loves(romeo, juliet).
+
+yes
+| ?- listing(loves(X, Y)).
+uncaught exception: error(type_error(predicate_indicator,loves(_283,_284)),setof/3)
+| ?- listing(loves(romeo, X)).
+uncaught exception: error(type_error(predicate_indicator,loves(romeo,_284)),setof/3)
+| ?- listing(loves(romeo, juliet)).
+uncaught exception: error(type_error(predicate_indicator,loves(romeo,juliet)),setof/3)
+| ?- listing(loves).               
+
+% file: /Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl
+
+loves(romeo, juliet).
+loves(juliet, romeo) :-
+        loves(romeo, juliet).
+
+yes
+| ?- male(X), female(Y).
+
+X = albert
+Y = alice ? ;
+
+X = albert
+Y = betsy ? ;
+
+X = albert
+Y = diana ? ;
+
+X = bill
+Y = alice ? ;
+
+X = bill
+Y = betsy ? ;
+
+X = bill
+Y = diana ? ;
+
+X = bob
+Y = alice ? ;
+
+X = bob
+Y = betsy ? ;
+
+X = bob
+Y = diana ? ;
+
+X = carl
+Y = alice ? ;
+
+X = carl
+Y = betsy ? ;
+
+X = carl
+Y = diana ? ;
+
+X = charlie
+Y = alice ? ;
+
+X = charlie
+Y = betsy ? ;
+
+X = charlie
+Y = diana ? ;
+
+X = dan
+Y = alice ? ;
+
+X = dan
+Y = betsy ? ;
+
+X = dan
+Y = diana ? ;
+
+X = edward
+Y = alice ? ;
+
+X = edward
+Y = betsy ? ;
+
+X = edward
+Y = diana
+
+(3 ms) yes
+| ?- male(X), female(Y).
+
+X = albert
+Y = alice ? 
+
+yes
+| ?- [start]/
+.
+uncaught exception: error(syntax_error('user_input:12 (char:1) right operand expected for infix operator'),read_term/3)
+| ?- [start].
+compiling /Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl for byte code...
+/Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl compiled, 27 lines read - 1838 bytes written, 5 ms
+
+(1 ms) yes
+| ?- runs(albert)
+.
+
+yes
+| ?- [start].    
+compiling /Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl for byte code...
+/Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl compiled, 31 lines read - 2118 bytes written, 5 ms
+
+(1 ms) yes
+| ?- dances(alice).
+
+yes
+| ?- dances(albert).
+
+no
+| ?- dances(X).     
+
+X = alice
+
+yes
+| ?- [start].       
+compiling /Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl for byte code...
+/Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl compiled, 37 lines read - 2464 bytes written, 5 ms
+
+(1 ms) yes
+| ?- does_alice_dances
+.
+uncaught exception: error(existence_error(procedure,does_alice_dances/0),top_level/0)
+| ?- does_alice_dance.
+When Alice is happy and with Albert she dances
+
+yes
+| ?- runs.
+uncaught exception: error(existence_error(procedure,runs/0),top_level/0)
+| ?- [start].         
+compiling /Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl for byte code...
+/Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl compiled, 37 lines read - 2466 bytes written, 6 ms
+
+yes
+| ?- does_alice_dance.
+
+no
+| ?- [start].         
+compiling /Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl for byte code...
+/Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl compiled, 37 lines read - 2464 bytes written, 7 ms
+
+yes
+| ?- does_alice_dance.
+When Alice is happy and with Albert she dances
+
+yes
+| ?- [start].         
+compiling /Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl for byte code...
+/Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl compiled, 43 lines read - 2750 bytes written, 7 ms
+
+yes
+| ?- swims(bill)
+.
+
+true ? ;
+uncaught exception: error(existence_error(procedure,near_water/1),swims/0)
+| ?- [start].   
+compiling /Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl for byte code...
+/Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl compiled, 48 lines read - 2882 bytes written, 5 ms
+
+(1 ms) yes
+| ?- swims(bill)
+
+Prolog interruption (h for help) ? a
+execution aborted
+| ?- swims(bill).
+
+true ? ;
+
+no
+| ?- swims(bill).
+
+true ? 
+
+yes
+| ?- [start].    
+compiling /Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl for byte code...
+/Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl compiled, 57 lines read - 3665 bytes written, 9 ms
+
+(1 ms) yes
+| ?- parent(X, bob).
+
+X = albert ? ;
+
+X = alice ? 
+
+yes
+| ?- parent(X, bob), dances(X).
+
+X = alice ? ;
+
+no
+| ?- parent(Y, carl), parent(X, Y).
+
+X = albert
+Y = bob ? ;
+
+X = alice
+Y = bob ? ;
+
+no
+| ?- parent(albert, X), parent(X, Y).
+
+X = bob
+Y = charlie ? ;
+
+X = bob
+Y = carl ? ;
+
+no
+| ?- [start].                        
+compiling /Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl for byte code...
+/Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl compiled, 63 lines read - 4156 bytes written, 6 ms
+
+(1 ms) yes
+| ?- get_grandchild.
+Albert is the grandparent of charlie
+
+true ? ;
+Albert is the grandparent of carl
+
+true ? ;
+
+(1 ms) no
+| ?- parent(X, carl), parent(X, charlie).
+
+X = bob ? ;
+
+no
+| ?- [start].                            
+compiling /Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl for byte code...
+/Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl compiled, 68 lines read - 4696 bytes written, 9 ms
+
+(2 ms) yes
+| ?- get_grandparent.                    
+bob 
+uncaught exception: error(type_error(list,'is the'),format/2)
+| ?- [start].        
+compiling /Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl for byte code...
+/Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl compiled, 68 lines read - 4995 bytes written, 9 ms
+
+(1 ms) yes
+| ?- get_grandparent.
+bob is the grandparent 
+
+true ? ;
+
+(1 ms) no
+| ?- [start].        
+compiling /Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl for byte code...
+/Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl compiled, 70 lines read - 5142 bytes written, 9 ms
+
+(1 ms) yes
+| ?- parent(X, carl), brother(X, Y).
+
+X = bob
+Y = bill
+
+yes
+| ?- [start].                       
+compiling /Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl for byte code...
+/Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl compiled, 74 lines read - 5454 bytes written, 7 ms
+
+(2 ms) yes
+| ?- grand_parent(A, carl).
+uncaught exception: error(existence_error(procedure,grand_parent/2),top_level/0)
+| ?- grandparent(A, carl). 
+
+A = albert ? ;
+
+A = alice ? ;
+
+no
+| ?- [start].              
+compiling /Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl for byte code...
+/Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl compiled, 77 lines read - 5695 bytes written, 8 ms
+
+(2 ms) yes
+| ?- blushes(derek).
+
+yes
+| ?- [start].       
+compiling /Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl for byte code...
+/Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl compiled, 80 lines read - 6114 bytes written, 7 ms
+
+(1 ms) yes
+| ?- hates(romeo, X).
+
+X = tybalt
+
+yes
+| ?- hates(romeo, _).
+
+yes
+| ?- hates(juliet, _).
+
+no
+| ?- [start].         
+compiling /Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl for byte code...
+/Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl compiled, 91 lines read - 6817 bytes written, 8 ms
+
+(2 ms) yes
+| ?- what_grade(10).
+Go to grade 5
+
+yes
+| ?- [start].       
+compiling /Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl for byte code...
+/Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl compiled, 93 lines read - 7026 bytes written, 13 ms
+
+(2 ms) yes
+| ?- owns(X, pet(cat, Y)).
+
+X = albert
+Y = olive
+
+yes
+| ?- [start].             
+compiling /Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl for byte code...
+/Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl compiled, 96 lines read - 7359 bytes written, 15 ms
+
+(1 ms) yes
+| ?- customer(sally, _, Balance).
+
+Balance = 120.55
+
+yes
+| ?- [start].                    
+compiling /Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl for byte code...
+/Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl compiled, 100 lines read - 7950 bytes written, 12 ms
+
+(2 ms) yes
+| ?- get_customer_balance(sally, smith).
+sally smith owes us $120.55 
+
+yes
+| ?- [start].                           
+compiling /Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl for byte code...
+/Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl compiled, 100 lines read - 7950 bytes written, 14 ms
+
+(2 ms) yes
+| ?- get_customer_balance(sally, smith).
+sally smith owes us $120.5 
+
+yes
+| ?- [start].                           
+compiling /Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl for byte code...
+/Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl compiled, 100 lines read - 7950 bytes written, 9 ms
+
+(2 ms) yes
+| ?- get_customer_balance(sally, smith).
+sally smith owes us $120.550 
+
+yes
+| ?- [start].                           
+compiling /Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl for byte code...
+/Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl:104: warning: singleton variables [Y,Y2] for horizontal/1
+/Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl:105: warning: singleton variables [X,X2] for vertical/1
+/Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl compiled, 104 lines read - 8622 bytes written, 9 ms
+
+(2 ms) yes
+| ?- horizontal(line(point(5, 10), point(5, 20))).
+
+yes
+| ?- [start].                                     
+compiling /Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl for byte code...
+/Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl:104: warning: singleton variables [Y,Y2] for vertical/1
+/Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl:105: warning: singleton variables [X,X2] for horizontal/1
+/Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/start.pl compiled, 104 lines read - 8622 bytes written, 8 ms
+
+(2 ms) yes
+| ?- horizontal(line(point(5, 10), point(5, 20))).
+
+no
+| ?- vertical(line(point(5, 10), point(5, 20))).  
+
+yes
+| ?- vertical(line(point(5, 10), point(X, 20))).
+
+X = 5
+
+yes
+| ?- vertical(line(point(5, 10), _))
+.
+
+yes
+| ?- vertical(line(point(5, 10), X)).
+
+X = point(5,_)
+
+yes
+| ?- alice = alice
+.
+
+yes
+| ?- 'alice' = alice.
+
+yes
+| ?- \+ (alice = albert)
+.
+
+yes
+| ?- \+ (alice = alice).
+
+no
+| ?- 3 > 5
+     
+.
+
+no
+| ?- 3 >=5.
+
+no
+| ?- 6 >= 5/
+
+Prolog interruption (h for help) ? a
+execution aborted
+| ?- 6 >= 5.
+
+yes
+| ?- W = alice
+.
+
+W = alice
+
+yes
+| ?- W
+.
+uncaught exception: error(instantiation_error,top_level/0)
+| ?- W.
+uncaught exception: error(instantiation_error,top_level/0)
+| ?- Rand1 = Rand2.
+
+Rand2 = Rand1
+
+(1 ms) yes
+| ?- rich(X, money) = rich(no_debt, Y).
+
+X = no_debt
+Y = money
+
+yes
+| ?- 
