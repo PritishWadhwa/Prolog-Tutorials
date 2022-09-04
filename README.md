@@ -1,3 +1,1 @@
 # Prolog-Tutorials
-test
-test
