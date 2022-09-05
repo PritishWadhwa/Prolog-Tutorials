@@ -102,4 +102,4 @@ get_customer_balance(FName, LName) :-
 
 % know whether a line is horizontal or vertical
 vertical(line(point(X, Y), point(X, Y2))).
-horizontal(line(point(X, Y), point(X2, Y))).
+horizontal(line(point(X, Y), point(X2, Y))). 
