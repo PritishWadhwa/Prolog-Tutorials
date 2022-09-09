@@ -1,0 +1,20 @@
+?- [var].
+true.
+
+?- likes(john, mangoes).
+true.
+
+?- likes(john, X).
+X = flowers ;
+X = apples ;
+X = mangoes ;
+X = oranges.
+
+?- likes(john, Mary).
+Mary = flowers ;
+Mary = apples ;
+Mary = mangoes ;
+Mary = oranges.
+
+?- likes(john, mary).
+false.

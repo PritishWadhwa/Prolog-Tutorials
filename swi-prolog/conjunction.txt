@@ -1,0 +1,10 @@
+?- [conjunction].
+true.
+
+?- likes(mary, john), likes(mary, john)
+|    .
+false.
+
+?- likes(mary, X), likes(john, X).
+X = wine ;
+X = burger.
