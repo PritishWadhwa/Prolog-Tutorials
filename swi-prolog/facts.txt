@@ -1,0 +1,33 @@
+?- [facts].
+true.
+
+?- likes(john, X).
+X = mary ;
+X = charlie ;
+false.
+
+?- likes(john, bob).
+false.
+
+?- likes(john, wini).
+false.
+
+?- likes(john, mary).
+true.
+
+?- [facts].
+Warning: /Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/swi-prolog/facts.pl:14:
+Warning:    Clauses of likes/2 are not together in the source-file
+Warning:    Earlier definition at /Users/lalitwadhwa/Desktop/Sem7/AI/Prolog-Tutorials/swi-prolog/facts.pl:1
+Warning:    Current predicate: thief/1
+Warning:    Use :- discontiguous likes/2. to suppress this message
+true.
+
+?- may_steal(john, X).
+X = mary ;
+X = charlie ;
+X = snow ;
+X = dollar.
+
+?- may_steal(john, jewels).
+false.
