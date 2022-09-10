@@ -11,3 +11,14 @@ sum([], 0).
 sum([H | T], S) :-
     sum(T, S1),
     S is S1 + H.
+
+is_sorted([]).
+is_sorted([_]).
+is_sorted([X, Y | T]) :-
+    X =< Y,
+    is_sorted([Y | T]).
+
+append([], L2, L2).
+append([H | T], L2, [H | L3]) :-
+    append(T, L2, L3).
+
