@@ -1,0 +1,14 @@
+?- [X, Y, Z] = [john, likes, mary].
+X = john,
+Y = likes,
+Z = mary.
+
+?- [[the, Y] | Z] = [[X, mine], is].
+Y = mine,
+Z = [is],
+X = the.
+
+?- [[the, Y] | Z] = [[X, mine], [is, here]].
+Y = mine,
+Z = [[is, here]],
+X = the.

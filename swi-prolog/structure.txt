@@ -1,0 +1,22 @@
+?- [structure].
+true.
+
+?- owns(john, X).
+X = book(wonder, author(raquel, palacio)).
+
+?- owns(john, _).
+true.
+
+?- owns(john, book(X, Y)).
+X = wonder,
+Y = author(raquel, palacio).
+
+?- owns(john, book(X, author(Y, palacio))).
+X = wonder,
+Y = raquel.
+
+?- owns(john, book(X, author(Y, palacia))).
+false.
+
+?- owns(john, book(_, author(_, palacio))).
+true.

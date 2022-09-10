@@ -1,0 +1,28 @@
+?- [arithmeticOps].
+true.
+
+?- ruler(X, 1970).
+X = mike ;
+false.
+
+?- [arithmeticOps].
+true.
+
+?- density(china, X).
+X = 10.
+
+?- density(usa, X).
+false.
+
+?- density(us, X).
+X = 2.5.
+
+?- density(Y, X).
+Y = china,
+X = 10 ;
+Y = india,
+X = 21.25 ;
+Y = us,
+X = 2.5 ;
+Y = germany,
+X = 4.5.

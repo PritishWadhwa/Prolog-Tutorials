@@ -1,0 +1,18 @@
+?- [listMembership].
+true.
+
+?- member(3, [1,2,3,4]).
+true ;
+false.
+
+?- member(3, [3,2,3,4]).
+true ;
+true ;
+false.
+
+?- member(3, [3]).
+true ;
+false.
+
+?- member(3, [1,2,4]).
+false.
