@@ -1,0 +1,99 @@
+?- [loop].
+true.
+
+?- count_to_ten(2).
+2
+3
+4
+5
+6
+7
+8
+9
+10
+true .
+
+?- [loop].
+true.
+
+?- count_to_ten(2).
+2
+3
+4
+5
+6
+7
+8
+9
+10
+true .
+
+?- count_down(5, 8).
+3
+true ;
+2
+true ;
+1
+true ;
+0
+true.
+
+?- count_down(0, 5).
+5
+true ;
+4
+true ;
+3
+true ;
+2
+true ;
+1
+true ;
+0
+true.
+
+?- count_up(0, 5).
+0
+true .
+
+?- 
+|    
+|    .
+
+ERROR: Stream user_input:135285:1 Syntax error: Unexpected end of clause
+?- count_up(0, 5).
+0
+true ;
+1
+true ;
+2
+true ;
+3
+true ;
+4
+true ;
+5
+true.
+
+?- guess_number.
+Guess a number: 10
+|: .
+10 is not the number. Try again.
+Guess a number: |: 5.
+5 is not the number. Try again.
+Guess a number: |: 15.
+15 is not the number. Try again.
+You guessed it!
+true .
+
+?- guess_number.
+Guess a number: 10.
+10 is not the number. Try again.
+Guess a number: |: 5.
+5 is not the number. Try again.
+Guess a number: |: 2.
+2 is not the number. Try again.
+Guess a number: |: 15.
+15 is not the number. Try again.
+You guessed it!
+true .

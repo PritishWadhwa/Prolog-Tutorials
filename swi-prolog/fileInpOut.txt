@@ -1,0 +1,10 @@
+?- [fileInpOut].
+true.
+
+?-  write_to_file('test1.txt', 'I am pritish').
+
+true.
+
+?- read_file('test1.txt').
+I am pritish
+true.
