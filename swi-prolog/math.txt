@@ -1,0 +1,78 @@
+?- X is 2 + 2.
+X = 4.
+
+?- X is 3 + (2 * 10).
+X = 23.
+
+?- 50 > 30.
+true.
+
+?- (3 * 10) >= (50 / 2).
+true.
+
+?- \+ (3 = 10).
+true.
+
+?- 5 + 4 =:= 4 + 5.
+true.
+
+?- 5 + 4 =\= 4 + 5.
+false.
+
+?- 5 > 10 ; 10 < 20.
+true.
+
+?- X is mod(7, 2).
+X = 1.
+
+?- random(0, 10, X).
+X = 5.
+
+?- random(0, 10, X).
+X = 4.
+
+?- random(0, 10, X).
+X = 1.
+
+?- between(0, 5, X).
+X = 0 ;
+X = 1 ;
+X = 2 ;
+X = 3 ;
+X = 4 ;
+X = 5.
+
+?- succ(2, X).
+X = 3.
+
+?- X is abs(-10).
+X = 10.
+
+?- X is max(10, 5).
+X = 10.
+
+?- X is min(10, 5).
+X = 5.
+
+?- X is round(10.55).
+X = 11.
+
+?- X is round(10.45).
+X = 10.
+
+?- X is trunc(10.56).
+ERROR: Arithmetic: `trunc/1' is not a function
+ERROR: In:
+ERROR:   [10] _10942 is trunc(10.56)
+ERROR:    [9] toplevel_call('<garbage_collected>') at /usr/local/Cellar/swi-prolog/8.4.3_1/libexec/lib/swipl/boot/toplevel.pl:1158
+?- X is truncate(10.56).
+X = 10.
+
+?- X is floor(10.56).
+X = 10.
+
+?- X is ceil(10.56).
+X = 11.
+
+?- X is 2**3.
+X = 8.

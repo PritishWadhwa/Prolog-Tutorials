@@ -1,0 +1,47 @@
+?- [inpOut].
+true.
+
+?- say_hi.
+What is your name?
+| 'Pritish'.
+Hello Pritish
+true.
+
+?- [inpOut].
+true.
+
+?- fav_char.
+What is your favorite character?
+| 'P'.
+The ascii value is 39
+'
+true.
+
+?- fav_char.
+| P
+| .
+|  
+| ^C
+Action (h for help) ? abort
+% Execution Aborted
+?-
+| ^C
+Action (h for help) ? abort
+% Execution Aborted
+?- [inpOut].
+true.
+
+?- fav_char.
+What is your favorite character?
+| A.
+The ascii value 65 is
+A
+true.
+
+ERROR: Stream user_input:270:1 Syntax error: Unexpected end of clause
+?- fav_char.
+What is your favorite character?
+| A
+The ascii value 65 is
+A
+true.

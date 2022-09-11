@@ -1,0 +1,12 @@
+?- [recursion].
+true.
+
+?- related(albert, carl).
+true ;
+false.
+
+?- related(Z, carl).
+Z = bob ;
+Z = albert ;
+Z = alice ;
+false.
